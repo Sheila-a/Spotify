@@ -10,7 +10,7 @@ export default function useAuth(code) {
   //   to get the information, use the useEffect Hook
   useEffect(() => {
     axios
-      .post("http://localhost:3001/login", {
+      .post("https://sheila-spotify.netlify.app/login", {
         code,
       })
       .then((res) => {
