@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import useSound from "use-sound"; // for handling the sound
-import { Esc, Bsc, Csc } from "../../assets/music";
+import { Esc } from "../../assets/music";
 import {
   AiFillPlayCircle,
   AiFillPauseCircle,
