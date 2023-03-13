@@ -19,7 +19,7 @@ export default function useAuth(code) {
         setRefreshToken(res.data.refreshToken);
         setExpiresIn(res.data.expiresIn);
         // to remove the token from the url. here everything is empty so just pushing the root url
-        window.history.pushState({}, null, "/home");
+        window.history.pushState({}, null, "/ ");
       })
       //   redirect user back to login incase of error
       .catch(() => {
