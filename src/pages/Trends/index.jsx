@@ -1,8 +1,8 @@
 import React from "react";
 import design from "./style.module.css";
-import LoadMe from "../../components/LoadMe/index.jsx";
-import Error from "../../components/Error/index.jsx";
-import SongCard from "../../components/SongCard/index.jsx";
+// import LoadMe from "../../components/LoadMe/index.jsx";
+// import Error from "../../components/Error/index.jsx";
+// import SongCard from "../../components/SongCard/index.jsx";
 
 const Trends = () => {
   return (
