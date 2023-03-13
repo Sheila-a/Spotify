@@ -1,0 +1,16 @@
+.main {
+    display: flex;
+    /* flex-direction: column; */
+    padding: 3vh 10vh;
+    /* height: 150vh; */
+    background: rgb(231, 232, 243);
+}
+
+.main_inner {
+    display: flex;
+}
+
+.form_control {
+    width: 100%;
+    /* padding-top: 5vh; */
+}

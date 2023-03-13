@@ -1,0 +1,85 @@
+.main {
+    padding: 3vh 10vh;
+    background: rgb(231, 232, 243);
+}
+
+.container {
+    height: 94vh;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.btn_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.btn1,
+.btn2 {
+    /* margin-top: 45vh; */
+    padding: 10px 20px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid grey;
+    color: #fff;
+}
+
+.btn1:hover,
+.btn2:hover {
+    cursor: pointer;
+    background: rgba(133, 142, 226, 0.253);
+    color: #000;
+    transition: .3s ease-in;
+}
+
+.btn1 {
+    background: rgb(133, 143, 226);
+}
+
+.btn1:hover {}
+
+.btn2 {
+    background: rgb(72, 84, 189);
+}
+
+@media (max-width:640px) {
+
+    .main {
+        padding: 3vh 5vh;
+
+    }
+
+    .btn_container {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .btn1,
+    .btn2 {
+        margin: 2vh auto;
+    }
+
+    .btn1,
+    .btn2 {
+        padding: 8px 16px;
+
+    }
+}
+
+@media (max-width:229px) {
+
+    .btn1,
+    .btn2 {
+        padding: 7px 10px;
+        font-size: 10px;
+
+    }
+}

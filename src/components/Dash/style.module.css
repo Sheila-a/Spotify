@@ -1,0 +1,38 @@
+a {
+    text-decoration: none;
+}
+
+.dash {
+    display: flex;
+    align-items: center;
+    padding: 1vh 1vh;
+    border-radius: 12px;
+    color: rgb(137, 136, 138);
+    /* margin: 1vh auto; */
+    cursor: pointer;
+    /* max-width: 70%; */
+
+}
+
+.dash img,
+.dash p {
+    margin: 1.5vh 0;
+
+}
+
+.dash img {
+    margin-right: 2vh;
+    width: 15%;
+    /* background-color: white; */
+}
+
+.dash p {
+    font-size: 15px;
+}
+
+.dash:hover,
+.dash:active {
+    background: #000;
+    color: #fff;
+    transition: .3s ease-in;
+}

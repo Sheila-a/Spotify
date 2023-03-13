@@ -1,0 +1,40 @@
+.container {
+    background: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    height: 26vh;
+}
+
+.img {
+    border-radius: 10px;
+    height: 20vh;
+    width: 100%;
+    /* object-fit: cover; */
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bottom_left h5,
+.bottom_left p {
+    margin: 0;
+}
+
+.bottom_left p {
+    font-size: 10px;
+}
+
+.border {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 0px 5px;
+    font-size: 11px;
+}
+
+.img2 {
+    width: 10px;
+    object-fit: contain;
+}

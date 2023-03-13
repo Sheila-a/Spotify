@@ -1,0 +1,28 @@
+.right_container {
+    background: rgb(244, 245, 254);
+    width: 21%;
+    border-radius: 0px 20px 20px 0px;
+    padding-right: 2vh;
+
+}
+
+.shorts {
+    /* display: grid;
+    grid-template-columns: 100px 100px;
+    grid-gap: 10px; */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.shorts:nth-of-type() {
+    margin-right: 1vh;
+}
+
+.SH {
+    margin-bottom: 10px;
+}
+
+.FA {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}

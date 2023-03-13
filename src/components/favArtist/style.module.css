@@ -1,0 +1,37 @@
+.favArtist,
+.FA_left {
+    display: flex;
+    align-items: center;
+}
+
+
+.favArtist {
+    justify-content: space-between;
+    align-items: center;
+    height: 5vh;
+    padding: 1px 0;
+    margin-bottom: 8px;
+}
+
+.favArtist:last-child {
+    margin-bottom: 3vh;
+}
+
+.FA_left img {
+    margin-right: 15px;
+}
+
+.FA_left_inner p,
+.FA_left_inner h5,
+.dropdown p {
+    margin: 0;
+}
+
+.FA_left_inner p {
+    font-size: 10px;
+}
+
+.dropdown {
+    margin: 0;
+    font-size: 30px;
+}

@@ -1,0 +1,16 @@
+.main {
+    padding: 3vh 10vh;
+    height: 100vh;
+    background: rgb(231, 232, 243);
+}
+
+.container {
+    height: 94vh;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+/* 
+.card_container {
+    background: #000;
+} */
