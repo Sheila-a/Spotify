@@ -37,7 +37,7 @@ export default function HomePlayer(params) {
         sec: secRemain,
       });
     }
-  }, [isPlaying]);
+  }, [isPlaying, duration]);
 
   useEffect(() => {
     const interval = setInterval(() => {
