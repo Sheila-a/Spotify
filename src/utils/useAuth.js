@@ -19,11 +19,11 @@ export default function useAuth(code) {
         setRefreshToken(res.data.refreshToken);
         setExpiresIn(res.data.expiresIn);
         // to remove the token from the url. here everything is empty so just pushing the root url
-        window.history.pushState({}, null, "/");
+        window.history.pushState({}, null, "/home");
       })
       //   redirect user back to login incase of error
       .catch(() => {
-        window.location = "https://sheila-spotify.netlify.app/";
+        window.location = "https://sheila-spotify.netlify.app";
       });
   }, [code]);
 
@@ -44,7 +44,7 @@ export default function useAuth(code) {
         })
         //   redirect user back to login incase of error
         .catch(() => {
-          window.location = "https://sheila-spotify.netlify.app/";
+          window.location = "https://sheila-spotify.netlify.app";
         });
     }, (expiresIn - 60) * 1000);
     return () => clearInterval(interval);
