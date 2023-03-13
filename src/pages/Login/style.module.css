@@ -24,7 +24,6 @@ a {
 
 .btn1,
 .btn2 {
-    /* margin-top: 45vh; */
     padding: 10px 20px;
     border-radius: 10px;
     outline: none;
@@ -44,7 +43,6 @@ a {
     background: rgb(133, 143, 226);
 }
 
-.btn1:hover {}
 
 .btn2 {
     background: rgb(72, 84, 189);

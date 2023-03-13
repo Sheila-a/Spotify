@@ -8,9 +8,7 @@ a {
     padding: 1vh 1vh;
     border-radius: 12px;
     color: rgb(137, 136, 138);
-    /* margin: 1vh auto; */
     cursor: pointer;
-    /* max-width: 70%; */
 
 }
 
@@ -23,7 +21,6 @@ a {
 .dash img {
     margin-right: 2vh;
     width: 15%;
-    /* background-color: white; */
 }
 
 .dash p {

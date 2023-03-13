@@ -1,21 +1,17 @@
 .sidebar {
     width: 20%;
-    /* height: 91vh; */
     padding: 5vh 4vh 3vh 4vh;
     background-color: #fff;
     border-radius: 20px 0 0 20px;
-    /* overflow-y: */
 }
 
 .side_header {
     display: flex;
     align-items: center;
-    /* margin-bottom: 20px; */
 }
 
 .side_header img {
     width: 20%;
-    /* margin-right: 2vh; */
 }
 
 .side_title span {
@@ -26,4 +22,10 @@
     font-size: 12px;
     font-weight: 100;
     color: #89888a;
+}
+
+@media screen and (max-height:967px) {
+    .sidebar {
+        /* display: none; */
+    }
 }

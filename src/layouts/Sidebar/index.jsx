@@ -14,6 +14,7 @@ import {
   Events,
   Album,
 } from "../../assets/icons.js";
+// import { AiFillHome } from "react-icons/ai";
 
 const Sidebar = () => {
   return (

@@ -75,25 +75,20 @@ export default function Dashboard({ code }) {
     props.history.push(`/search/${search}`);
   }
 
-  const Forms = () => {
-    return (
-      <Form.Control
-        className={design.form_control}
-        type="search"
-        placeholder="Search Songs"
-        value={search}
-        onChange={(e) => setSearch(e.target.value)}
-        onClick={HandleClick}
-      />
-    );
-  };
   return (
     // <div className={design.main}>
     // </div>
     <div className={design.main}>
       <Sidebar />
       <div style={{ width: "60%" }}>
-        <Forms />
+        <Form.Control
+          className={design.form_control}
+          type="search"
+          placeholder="Search Songs"
+          value={search}
+          onChange={(e) => setSearch(e.target.value)}
+          onClick={HandleClick}
+        />
 
         <div className="" style={{}}>
           {searchResults.map((track) => (

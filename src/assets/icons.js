@@ -16,6 +16,8 @@ import Star from "./star.png";
 import Music from "./music.png";
 import Piano from "./piano.png";
 import Plus from "./plus.png";
+import Guitar from "./guitar.png";
+import Trump from "./jazz.png";
 
 export {
   Home,
@@ -36,6 +38,8 @@ export {
   Music,
   Piano,
   Plus,
+  Guitar,
+  Trump,
 };
 
 // icon color = #89888a;

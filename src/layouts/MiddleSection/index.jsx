@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import design from "./style.module.css";
 import { Chev, Search, Fire, LChev } from "../../assets/icons.js";
 import PFCard from "../../components/PF_Card";
+import HomePlayer from "../../components/Home_Player";
 
 const MidSection = () => {
   const [search, setSearch] = useState();
@@ -37,7 +38,7 @@ const MidSection = () => {
         </p>
       </div>
       <div className={design.section_2}>
-        <h2>Trending</h2>
+        <h1>Trending</h1>
 
         <p>
           More{" "}
@@ -64,15 +65,46 @@ const MidSection = () => {
             <th>ALBUM</th>
           </tr>
           <tbody>
-            <tr>
-              <td>1</td>
-              <td>dance</td>
-              <td>dance</td>
+            <tr className={design.trows}>
+              <td>01</td>
+              <td>Priority</td>
+              <td>Mos Def</td>
               <td>1:25</td>
-              <td>dance</td>
+              <td>The Ecstatic</td>
+            </tr>
+            <tr className={design.trows}>
+              <td>02</td>
+              <td>Time Is Ticking Out</td>
+              <td>The Cranberries</td>
+              <td>2:59</td>
+              <td>Wake Up And Smell The...</td>
+            </tr>
+            <tr className={design.trows}>
+              <td>03</td>
+              <td>One Minute More</td>
+              <td>Capital Cities</td>
+              <td>3:23</td>
+              <td>In A Tidal Wave Of M...</td>
+            </tr>
+            <tr className={design.trows}>
+              <td>04</td>
+              <td>君之白内物语(Kimi...</td>
+              <td>Supercell</td>
+              <td>5:50</td>
+              <td>Sony Music Records Inc</td>
+            </tr>
+            <tr className={design.trows}>
+              <td>05</td>
+              <td>世界 和 恋 に 落ちている</td>
+              <td>CHiCO</td>
+              <td>5:11</td>
+              <td>HineyWorks</td>
             </tr>
           </tbody>
         </table>
+      </div>
+      <div className={design.section_6}>
+        <HomePlayer />
       </div>
     </div>
   );

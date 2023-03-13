@@ -1,6 +1,6 @@
 .mainn {
     width: 60%;
-    /* background: rgb(244, 245, 254); */
+    background: rgb(244, 245, 254);
     padding: 3vh 4vh;
 }
 
@@ -18,6 +18,7 @@
 .head_icos {
     width: 20px;
     object-fit: contain;
+    cursor: pointer;
 }
 
 .right_chev {
@@ -85,11 +86,12 @@
 .section_2 p {
     color: #89888a;
     font-size: 14px;
+    cursor: pointer;
 
 }
 
 .section_2 p,
-.section_2 h2 {
+.section_2 h1 {
     margin: 0;
     margin-bottom: 5vh;
 }
@@ -106,16 +108,21 @@
 
 .section_4 p {
     color: #878788;
+    cursor: pointer;
 }
 
 .section_4 h1,
 .section_4 p {
-    margin-bottom: 0;
+    margin: 4vh 0 1vh 0;
 }
 
 .section_5 table {
     width: 100%;
-    text-align-last: left;
+    text-align: left;
+}
+
+table {
+    border-spacing: 0px
 }
 
 table>tr>th {
@@ -125,10 +132,61 @@ table>tr>th {
 
 table>tr>th:first-child {
     width: 3%;
-    text-align: center;
+    /* text-align: center; */
 }
 
 table>tr>:nth-child(4) {
-    width: 10%;
-    text-align: right;
+    width: 15%;
+    /* text-align: right; */
+}
+
+td {
+    font-size: 14px;
+    color: #0000006e;
+    font-weight: 600;
+    padding: 15px 0;
+    border: hidden;
+}
+
+td:first-child {
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px 0 0 10px;
+
+}
+
+td:last-child {
+    padding-right: 10px;
+    border-radius: 0 10px 10px 0;
+
+}
+
+tr:hover td {
+    background: #fff;
+    cursor: pointer;
+    /* font-weight: 400; */
+    transition: .3s ease-in;
+    color: #000000b6;
+    /* box-shadow: 30px grey; */
+    /* box-shadow:
+        rgba(0, 0, 0, 0.1) 0px 0px 25px 0px,
+        rgba(0, 0, 0, 0.04) 0px 0px 10px 0px; */
+}
+
+tr:not(:first-child):hover {
+    box-shadow:
+        rgba(0, 0, 0, 0.1) 0px 0px 25px 0px,
+        rgba(0, 0, 0, 0.04) 0px 0px 20px 0px;
+}
+
+table>tr:first-child:hover {
+    background: transparent !important;
+    cursor: default;
+}
+
+@media screen and (max-height:967px) {
+    .mainn {
+        border-radius: 20px 0 0 20px;
+        width: 50%
+    }
 }

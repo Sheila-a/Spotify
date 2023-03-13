@@ -4,7 +4,7 @@ import design from "./style.module.css";
 const PCard = (props) => {
   return (
     <div className={design.container}>
-      <img src={props.img} alt="jj" className={design.img} />
+      <img src={props.img} alt="" className={design.img} />
       <div className={design.bottom}>
         <div className={design.bottom_left}>
           <h5>{props.title}</h5>

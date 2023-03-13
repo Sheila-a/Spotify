@@ -8,17 +8,19 @@
 .favArtist {
     justify-content: space-between;
     align-items: center;
-    height: 5vh;
-    padding: 1px 0;
-    margin-bottom: 8px;
+    padding: 8px 5px;
+    border-radius: 10px;
+    cursor: pointer;
 }
 
 .favArtist:last-child {
-    margin-bottom: 3vh;
+    margin-bottom: 8vh;
 }
 
 .FA_left img {
-    margin-right: 15px;
+    margin-right: 10px;
+    width: 20%;
+    object-fit: cover;
 }
 
 .FA_left_inner p,
@@ -34,4 +36,9 @@
 .dropdown {
     margin: 0;
     font-size: 30px;
+}
+
+.favArtist:hover {
+    background: #fff;
+    transition: .4s ease-in;
 }

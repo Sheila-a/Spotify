@@ -5,22 +5,27 @@
     border-radius: 30px;
     outline: none;
     border: 0;
-    padding: 1.5vh 1.5vh;
-    margin: 0 1.5vh 1vh 0;
+    padding: 1.8vh;
+    margin: 0 2vh 2.5vh 0;
+    cursor: pointer;
+    color: rgb(153, 153, 154);
 }
 
 
 .shortcut p {
-    /* margin: 2vh auto; */
     margin: 0;
-    /* padding: 0; */
     font-weight: 700;
     font-size: 12px;
-    color: rgb(153, 153, 154);
 }
 
 .shortcut img {
     width: 15px;
     margin-right: 5px;
     object-fit: cover;
+}
+
+.shortcut:hover {
+    background: #000;
+    color: #fff;
+    transition: .3s ease-in;
 }

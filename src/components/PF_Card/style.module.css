@@ -1,12 +1,9 @@
 .main_cont {
     width: 90%;
-    /* max-height: 45vh; */
     border-radius: 30px;
-    padding: 12vh 5vh;
-    /* height: 20vh; */
+    padding: 10vh 5vh 2.8vh 5vh;
     background-image: linear-gradient(75deg, #fff, #fffffffb, #ffffff9d, #ffffff23, #66666604), url("../../assets/img/Alone.jpg");
     background-size: 100% 100%;
-    /* background-size: contain; */
     background-repeat: no-repeat;
 }
 
@@ -15,8 +12,6 @@
 .bg {
     position: absolute;
     object-fit: cover;
-    /* height: 4vh; */
-
 }
 
 .content {
@@ -27,20 +22,20 @@
 
 .content_1 p {
     color: #a8a9ad;
-    line-height: 0;
+    line-height: 19px;
+    padding-bottom: 20px;
 }
 
 .content_1 h1 {
-
+    padding-bottom: 10px;
     line-height: 32px;
+    margin-bottom: 3vh;
 }
 
 .content_2 {
     display: flex;
     justify-content: space-between;
 }
-
-
 
 .content_2_btm p:first-child {
     color: #dbdcdd;

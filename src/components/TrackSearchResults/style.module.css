@@ -1,0 +1,23 @@
+.container {
+    cursor: pointer;
+    margin: 2vh;
+    width: 9vw;
+    background: #6a4f87;
+    padding: 2vh;
+    border-radius: 10px;
+}
+
+.img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.title {
+    font-weight: 500;
+    color: #fff;
+    font-size: 12px;
+}
+
+.artist {
+    font-size: 11px;
+}

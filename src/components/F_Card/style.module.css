@@ -2,14 +2,14 @@
     background: #fff;
     border-radius: 10px;
     padding: 10px;
-    height: 26vh;
+    height: 50vh;
 }
 
 .img {
     border-radius: 10px;
-    height: 20vh;
+    height: 80%;
     width: 100%;
-    /* object-fit: cover; */
+    object-fit: cover;
 }
 
 .bottom {
