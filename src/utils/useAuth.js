@@ -23,7 +23,7 @@ export default function useAuth(code) {
       })
       //   redirect user back to login incase of error
       .catch(() => {
-        window.location = "https://sheila-spotify.netlify.app";
+        window.location = "/";
       });
   }, [code]);
 
@@ -44,7 +44,7 @@ export default function useAuth(code) {
         })
         //   redirect user back to login incase of error
         .catch(() => {
-          window.location = "https://sheila-spotify.netlify.app";
+          window.location = "/";
         });
     }, (expiresIn - 60) * 1000);
     return () => clearInterval(interval);
