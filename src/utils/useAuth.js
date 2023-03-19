@@ -9,11 +9,13 @@ export default function useAuth(code) {
 
   //   to get the information, use the useEffect Hook
   useEffect(() => {
+    console.log(code);
     axios
-      .post("https://sheila-spotify.netlify.app/login", {
+      .post("http://localhost:3001/login", {
         code,
       })
       .then((res) => {
+        console.log(res);
         // to set the data collected
         setAccessToken(res.data.accessToken);
         setRefreshToken(res.data.refreshToken);
@@ -23,7 +25,7 @@ export default function useAuth(code) {
       })
       //   redirect user back to login incase of error
       .catch(() => {
-        window.location = "https://sheila-spotify.netlify.app";
+        window.location = "/";
       });
   }, [code]);
 
@@ -44,12 +46,13 @@ export default function useAuth(code) {
         })
         //   redirect user back to login incase of error
         .catch(() => {
-          window.location = "https://sheila-spotify.netlify.app";
+          window.location = "/";
         });
     }, (expiresIn - 60) * 1000);
     return () => clearInterval(interval);
   });
 
+  // console.log(code, accessToken);
   //   this is what is used to call all the different spotify API's but only lasts for an hour
   return accessToken;
 }

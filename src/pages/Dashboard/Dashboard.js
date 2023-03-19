@@ -5,15 +5,16 @@ import Sidebar from "../../layouts/Sidebar";
 import { Form } from "react-bootstrap";
 import SpotifyWebApi from "spotify-web-api-node";
 import TrackSearchResult from "../../components/TrackSearchResults/TrackSearchResult";
-import Player from "../../components//Player/Player";
+import Player from "../../components/Player/Player";
 import axios from "axios";
 
 const spotifyApi = new SpotifyWebApi({
-  clientId: "ec1c22c038444dafb2c39b56f90cdc9c",
+  // clientId: "ec1c22c038444dafb2c39b56f90cdc9c",
 });
 
 export default function Dashboard({ code }) {
   const accessToken = useAuth(code);
+  console.log(accessToken);
   const [search, setSearch] = useState("");
   const [searchResults, setSearchResults] = useState([]);
   const [nowPlaying, setNowPlaying] = useState();
@@ -57,30 +58,38 @@ export default function Dashboard({ code }) {
     // the cancel variable lets you cancel the previous request when a new request is made
     let cancel = false;
     // search query for artist, tracks etc
-    spotifyApi.searchTracks(search).then((res) => {
-      if (cancel) return;
-      // for items in tracks which include album, artist, name etc
-      // console.log(res);
-      setSearchResults(
-        res.body.tracks.items.map((track) => {
-          // to get the smallest size of images, we need to
-          const smallestImage = track.album.images.reduce((smallest, image) => {
-            if (image.height < smallest.height) return image;
-            return smallest;
-          }, track.album.images[0]);
-          return {
-            artist: track.artists[0].name,
-            album: track.album.name,
-            // name: track.name,
-            // id: track.id,
-            title: track.name,
-            uri: track.uri,
-            albumUrl: smallestImage.url,
-            time: track.album.name,
-          };
-        })
-      );
-    });
+    spotifyApi.searchTracks(search).then(
+      (res) => {
+        if (cancel) return;
+        // for items in tracks which include album, artist, name etc
+        // console.log(res);
+        setSearchResults(
+          res.body.tracks.items.map((track) => {
+            // to get the smallest size of images, we need to
+            const smallestImage = track.album.images.reduce(
+              (smallest, image) => {
+                if (image.height < smallest.height) return image;
+                return smallest;
+              },
+              track.album.images[0]
+            );
+            return {
+              artist: track.artists[0].name,
+              album: track.album.name,
+              // name: track.name,
+              // id: track.id,
+              title: track.name,
+              uri: track.uri,
+              albumUrl: smallestImage.url,
+              time: track.album.name,
+            };
+          })
+        );
+      },
+      (err) => {
+        console.log(err);
+      }
+    );
     return () => (cancel = true);
   }, [search, accessToken]);
 

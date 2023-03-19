@@ -6,7 +6,7 @@ import Home from "./pages/Home";
 import Trends from "./pages/Trends";
 
 // to get the code from our url everytime we access the page
-const code = new URLSearchParams(window.location.search).get("token");
+const code = new URLSearchParams(window.location.search).get("code");
 function App() {
   return (
     <>
