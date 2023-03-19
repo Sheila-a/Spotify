@@ -5,7 +5,7 @@ import design from "./style.module.css";
 //   "https://accounts.spotify.com/authorize?client_id=c1c4bbeb184f4eec8d3ea2f8fb7f87c2&response_type=code&redirect_uri=http://localhost:3000&scope=streaming%20user-read-email%20user-read-private%20user-library-read%20user-library-modify%20user-read-playback-state%20user-modify-playback-state";
 
 const AUTH_URL =
-  "https://accounts.spotify.com/authorize?client_id=c1c4bbeb184f4eec8d3ea2f8fb7f87c2&response_type=code&redirect_uri=http://localhost:3000&scope=streaming%20user-read-email%20user-read-private%20user-library-read%20user-library-modify%20user-read-playback-state%20user-modify-playback-state";
+  "https://accounts.spotify.com/authorize?client_id=c1c4bbeb184f4eec8d3ea2f8fb7f87c2&response_type=code&redirect_uri=https://sheila-spotify-mt.netlify.app/&scope=streaming%20user-read-email%20user-read-private%20user-library-read%20user-library-modify%20user-read-playback-state%20user-modify-playback-state";
 
 export default function Login() {
   return (
