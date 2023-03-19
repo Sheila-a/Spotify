@@ -31,8 +31,8 @@ export default function Dashboard({ code }) {
     if (!nowPlaying) return;
 
     axios
-      .get("http://localhost:3001/lyrics", {
-        // .get("https://spotify-web.onrender.com/lyrics", {
+      // .get("http://localhost:3001/lyrics", {
+      .get("https://spotify-web.onrender.com/lyrics", {
         params: {
           track: nowPlaying.title,
           artist: nowPlaying.artist,
