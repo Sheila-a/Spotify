@@ -11,7 +11,8 @@ export default function useAuth(code) {
   useEffect(() => {
     console.log(code);
     axios
-      .post("http://localhost:3001/login", {
+      .post("https://spotify-web.onrender.com/login", {
+        // .post("http://localhost:3001/login", {
         code,
       })
       .then((res) => {
@@ -36,7 +37,7 @@ export default function useAuth(code) {
     // timeframe for refresh token right before expiresIn expires
     const interval = setInterval(() => {
       axios
-        .post("http://localhost:3001/refresh", {
+        .post("https://spotify-web.onrender.com/refresh", {
           refreshToken,
         })
         .then((res) => {
